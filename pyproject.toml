@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taichikj-inferobs_jd053"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别模型服务可观测性工程师·流水线的数据倾斜上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "taichikj" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://taichikj.github.io"
+Repository = "https://github.com/taichikj/inferobs_jd053"
+Issues = "https://github.com/taichikj/inferobs_jd053/issues"
+
+[project.scripts]
+inferobs_jd053 = "inferobs_jd053:main"
+
+[tool.setuptools]
+py-modules = ["inferobs_jd053"]
